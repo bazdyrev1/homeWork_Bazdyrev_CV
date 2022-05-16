@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
 
 @media screen and (min-width: 600px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
     .container {
         margin: auto;
         width: 600px;
@@ -35,16 +39,18 @@
         align-items: flex-end;
         flex-direction: column;
     }
-    .boldText {
+    h1 {
         font-family: 'Noto Sans', sans-serif;
         font-weight: 600;
         font-size: 21px;
         color: #0339ad;
+        margin: 0;
     }
-    .name{
+    .name {
         text-align: center;
+        margin: 10px 0;
     }
-    table{
+    table {
         width: 400px;
     }
     .mainImg {
@@ -52,30 +58,30 @@
         height: 150px;
         border-radius: 7px;
     }
-    .infoSkills {
+    .someSkills {
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-evenly;
         align-items: center;
     }
-    .skills{
+    .skills {
         width:30%;
     }
-    ul{
+    ul {
         text-align:center;
         padding: 0;
     }
-    ul li{
+    ul li {
         display:inline-block;
         list-style-type: none;
         font-family: 'Noto Sans', sans-serif;
         font-size: 14px;
     }
-    .infoWorks{
+    .infoWorks {
         display: flex;
         flex-direction: column;
     }
-    .infoText, .infAbout{
+    .infoText, .infAbout {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -88,35 +94,31 @@
         align-items: center;
         text-align: center;
     }
-    .infExperience, .infGoal{
+    .infExperience, .infGoal {
         width: 75%;
     }
-    span{
-        font-size: 16px;
-        font-family: 'Noto Sans', sans-serif;
+    span, p {
         font-size: 14px;
-    }
-    p{
         font-family: 'Noto Sans', sans-serif;
-        margin: 5px 0px 15px 0px;
+        margin: 0;
+    }    
+    h4 {
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 500;
         font-size: 14px;
-    }
-    
-    .select{
-        font-family: 'Noto Sans', sans-serif;
-        font-weight: 600;
-        font-size: 15px;
+        margin: 0;
     }
     .title {
         overflow: hidden;
         text-align: center;
         font-size: 25px;
     }
-    .title span {
+    .title h2 {
         display: inline-block;
         vertical-align: middle;
         margin: 10px;
         font-size: 16px;
+        color: #0339ad;
     }
     .title:before,
     .title:after {
@@ -141,7 +143,7 @@
         font-family: 'Noto Sans', sans-serif;
         text-decoration: none;
     }
-    a:visited{
+    a:visited {
         color:#98b1ec;
     }
     a:hover {
@@ -150,7 +152,7 @@
 }
 
 @media screen and (max-width: 599px) {
-    body{
+    body {
         margin: 0;
         padding: 0;
     }
@@ -176,62 +178,64 @@
         direction: ltr;
         color:#0339ad
     }
-    .mainImg{
+    .mainImg {
         min-width: 112px;
         max-width:  160px;
         min-height: 180px;
         max-height: 210px;
         border-radius: 15px;
     }
-    .infoUser{
+    .infoUser {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
         margin: 10px auto;
     }
-    .name{
+    .name {
         text-align: center;
+        margin: 10px 0;
     }
     .infTextUSer {
         display: flex;
         align-items: center;
         flex-direction: column;
     }
-    .boldText {
+    h1 {
         font-family: 'Noto Sans', sans-serif;
         font-weight: 600;
         font-size: 21px;
         color: #0339ad;
+        margin: 0;
     }
-    table{
+    table {
         min-width: 360px;
     }
-    .infoSkills {
+    .someSkills {
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-evenly;
         align-items: center;
     }
-    .skills{
+    .skills {
         width:30%;
     }
-    ul{
+    ul {
         text-align:center;
         padding: 0;
     }
-    ul li{
+    ul li {
         display:inline-block;
         list-style-type: none;
         font-family: 'Noto Sans', sans-serif;
         font-size: 12px;
     }
-    .infoWorks{
+    .infoWorks {
         display: flex;
         flex-direction: column;
         align-items: center;
         align-content: center;
     }
-    .infoText{
+    .infoText {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -250,30 +254,26 @@
         align-items: center;
         text-align: center;
     }
-    .infExperience, .infGoal{
+    .infExperience, .infGoal {
         width: 90%;
     }
-    
-    span{
-        font-size: 16px;
+    span, p {
         font-family: 'Noto Sans', sans-serif;
-        font-size: 12px;
-    }
-    p{
-        font-family: 'Noto Sans', sans-serif;
-        margin: 5px 0px 15px 0px;
-    }
-    .select{
-        font-family: 'Noto Sans', sans-serif;
-        font-weight: 600;
         font-size: 13px;
+        margin: 0;
+    }
+    h4 {
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 500;
+        font-size: 13px;
+        margin: 0;
     }
     a {
         color:#4685f1;
         font-family: 'Noto Sans', sans-serif;
         text-decoration: none;
     }
-    a:visited{
+    a:visited {
         color:#98b1ec;
     }
     a:hover {
@@ -284,13 +284,16 @@
         overflow: hidden;
         text-align: center;
         font-size: 20px;
+        width: 100%;
     }
-    .title span {
+    .title h2 {
         display: inline-block;
         vertical-align: middle;
         margin: 10px;
         font-size: 14px;
+        color: #0339ad;
     }
+    
     .title:before,
     .title:after {
         content: "";
